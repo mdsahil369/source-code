@@ -1,23 +1,21 @@
 # sorted()
 
-name = ('Sahil','Dot','Code')
-
-def sorted(l):
-    name = list(l)
-    name.sort()
-    name = tuple(name)
-    return name
 
 
-print(sorted(name))
+# name = {'Sahil','Dot','Code','Apple'}
 
+# var = set(sorted(name))
 
+# print(var)
 
+car = [
+    {'Name':'Tesla','price':75190},
+    {'Name':'BMW','price':120000},
+    {'Name':'Lamborghini','price':500000},
+]
 
-
-
-
-
+var = sorted(car, key=lambda d : d['price'])
+print(var)
 
 
 
@@ -36,15 +34,6 @@ print(sorted(name))
 
 
 
-# name = ('Sahil','Dot','Code')
-
-# def sorted(l):
-#     l = list(l)
-#     l.sort()
-#     l = tuple(l)
-#     return l
-
-# print(sorted(name))
 
 
 
@@ -57,6 +46,6 @@ print(sorted(name))
 #     {'Lamborginy':'Lamborginy','price':950000},
 # ]
 
-# car0 = sorted(car, key=lambda d:d['price'])
+# car0 = sorted(car, key=lambda d:d.get('price'))
 
 # print(car0)
