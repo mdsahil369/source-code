@@ -25,12 +25,17 @@ class String2(String1):
         super().__init__(string, number)
         self.boolean = boolean
     
+    def lenth(self):
+        return 3
     def upper(self):
         return self.string.upper()
 
 s = String1("Wikipedia is a free online encyclopedia.",7)
 
-print(help(String1))
+# print(isinstance(s,String2))
+print(issubclass(String1,String2))
+
+# print(s.lenth())
 
 
 
