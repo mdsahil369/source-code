@@ -1,0 +1,1 @@
+# syntax error , indentation error , name error , type error , index error , value error ,  attribute error ,  key error ,
