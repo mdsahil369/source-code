@@ -2,13 +2,48 @@
 # spatial/magic/dunder methods
 
 
+# string = 10
+# print(type(string.__str__()))
+
+# print(dir(int))
 
 
 
 
 
 
+# list()
+# num = {1,2,3,4,5}
 
+# change = list(num)
+
+# print(type(change))
+
+
+
+
+
+class Person:
+    def __init__(self,f_name,l_name,password):
+        self.f_name = f_name
+        self.l_name = l_name
+        self._password = password
+    
+    def __name__(self):
+        return f"User Name : {self.f_name} {self.l_name}"
+
+    def __str__(self):
+        return f"({self.f_name},{self.l_name},{self._password})"
+    def __repr__(self):
+        return f"(Person('{self.f_name}','{self.l_name}','{self._password}'))"
+
+obj = Person('All','Subscriber','all')
+obj1 = Person('All','Subscriber','all')
+print(obj1.__repr__())
+
+
+# obj = list([1,2,3])
+# print(obj)
 
 
 
